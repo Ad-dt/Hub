@@ -15,7 +15,7 @@ with open(os.path.join(this_directory, "requirements.txt")) as f:
     requirements = f.readlines()
 
 setup(
-    name=project,
+    name=projects,
     version=VERSION,
     description="Snark Hub",
     long_description=long_description,
@@ -52,5 +52,6 @@ setup(
             "hub-dev = hub.cli.dev:cli",
         ]
     },
-    tests_require=["pytest", "mock>=1.0.1"],
+    tests_require=["pytest", "mock>=1.0.1"]
+
 )
